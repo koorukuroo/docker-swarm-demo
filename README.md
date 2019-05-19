@@ -138,7 +138,7 @@ docker service create --name redis \
 # test
 docker run --rm -it \
   --network=backend \
-  alpine \
+  alpine:3.6 \
   telnet redis 6379
 
 KEYS *
